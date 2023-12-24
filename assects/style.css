@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* slider */
+
+
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    
+
+}
+
+
+.home .home-slider .slide .content{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+    width: 100%;
+
+}
+
+.home .home-slider .slide .contant span{
+    color: var(--sae);
+    font-size: 2rem;
+}
+
+.home .home-slider .slide .contant h3{
+    color: var(--blue);
+    font-size: 7rem;
+}
+
+.home .home-slider .slide .contant p{
+    color: var(--blue);
+    font-size: 2rem;
+    padding: 5rem 0;
+    
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 2rem;
+    
+    border-radius: 20px;
+    color:white;
+    background: var(--sae);
+    cursor: pointer;
+    padding:.5rem;
+}
+
+.btn:hover{
+    background: var(--blue);
+    letter-spacing: .2rem;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--sae);
+}

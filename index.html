@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning-platfrom</title>
+    <!-- custom-css-link -->
+    <link rel="stylesheet" href="assects/style.css">
+
+    <!-- slider cdn from swiper  -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- font awoseme link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+ 
+    <!-- tailwind asript -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body >
+    <nav class="bg-purple-400 h-24 w-full flex justify-start items-center ">
+        <div class="  max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <h1 class="text-5xl md:text-4xl lg:text-5xl text-cyan-50">E-learning</h1>
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex items-center md:space-x-2 lg:space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="text-white hover:bg-gray-500 hover:text-white rounded-md px-3 py-2 md:text-xl text-2xl text-m font-medium" aria-current="page">Home</a>
+                  <a href="#" class="text-white hover:bg-gray-500 hover:text-white rounded-md px-3 py-2 md:text-xl text-2xl text-m font-medium">About-us</a>
+                  <a href="#" class="text-white hover:bg-gray-500 hover:text-white rounded-md px-3 py-2 md:text-xl text-2xl text-m font-medium">Contect</a>
+                  <a href="#" class="text-white hover:bg-gray-500 hover:text-white rounded-md px-3 py-2 md:text-xl text-2xl text-m font-medium">Programing</a>
+                  <a href="#" class="text-white hover:bg-gray-500 hover:text-white rounded-md px-3 py-2 md:text-xl text-2xl text-m font-medium">Course</a>
+              </div>
+          
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-xl  font-medium">Team</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- slider  -->
+       <!-- home section start -->
+       <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper wrapper">
+
+                <div class=" swiper-slide slide">
+
+                    <!-- <div class="contant">
+                        <span>OUR SPEASIAL DISHES</span>
+                        <h3>SPICY NOODLES</h3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, corporis.</P>
+                        <a href="#" class="btn">ORDER NOW</a>
+                    </div> -->
+                    <div class="image">
+                        <img width="500px" src="assects/Images/banner-2.jpg" alt="NOODLES">
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+
+                  
+                    <div class="image">
+                        <img width="500px" src="assects/Images/banner-3.jpg" alt="NOODLES">
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    
+                    <div class="image">
+                        <img width="500px" src="assects/Images/banner-4.png" alt="NOODLES">
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+    </section>
+
+<div style="height: 80px;"></div>
+    <!-- it is a trainning details -->
+    <section class="flex justify-center items-center">
+       <div class="w-9/12">
+        <div class="flex justify-center items-center mb-8"><h2 class="lg:text-4xl text-gray-700 font-bold"><span class="text-purple-800 tr">ডিজিটাল ট্রেনিং</span> / লার্নিং প্ল্যাটফর্ম</h2></div>
+        <div><p class="lg:text-2xl text-center text-gray-900">এখন প্রাতিষ্ঠানিক ট্রেনিং ৭০% কম খরচে অধিক কার্যকর করা সম্ভব অনলাইনে, অল্পসময়ে! স্কিল ডেভেলপমেন্ট ভিডিও, ইন্টারেক্টিভ কুইজ, নিশ্চিত করবে আপনার পারফর্মেন্স।</p></div>
+       </div>
+    </section>
+
+    <section  class=" flex justify-center">
+      <div class="lg:w-10/12 md:w-10/12 lg:flex  justify-center  ">
+
+        <div class="lg:w-1/2 md:flex  " >
+          <div class="md:w-1/2 block"><p class="m-8 text-center" >
+            More and more, learners are finding the convenience and flexibility of online learning a match for Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aperiam reiciendis illum vitae tempore numquam?
+            .
+          </p></div>
+          <div class="sm:m-8 " >
+            <h3 class=" text-purple-950 sm:text-2xl text-center lg:text-2xl mt-3 mb-3">Seven Benefits of Online Learning</h3>
+            <ol  style="list-style-type: decimal;" >
+              <li class="ml-7 " >Added Flexibility and Self-Paced Learning</li>
+              <li class="ml-7 ">Better Time Management</li>
+              <li class="ml-7 ">Demonstrated Self-Motivation</li>
+              <li class="ml-7 ">Improved Virtual Communication and Collaboration</li>
+              <li class="ml-7 ">A Broader, Global Perspective</li>
+              <li class="ml-7 ">Refined Critical-thinking Skills</li>
+              <li class="ml-7 ">New Technical Skills</li>
+            </ol>
+          </div>
+        </div>
+        <div class="lg:w-1/2   mt-3">
+          <img class=" sm:w-full lg:w-full rounded-2xl" src="assects/Images/registration.png" alt="">
+        </div>
+
+      </div>
+
+      
+    </section>
+
+    <!-- our all course section -->
+
+    <section  style="background-image: url('assects/Images/grid-bg.png');" class="bg-purple-500 sm:p-5 lg:p-10 ">
+      <div class="flex justify-center sm-m-auto">
+        <h2 class="lg:text-7xl text-3xl text-white drop-shadow-2xl-shadow-lg">Our Online Course</h2>
+      </div>
+      <div class="w-10/12   my-10 mx-auto md:flex  lg:flex justify-around mb-8">
+          <div class="lg:w-80 mt-5 md:h-72  md:mr-4 h-96 shadow-2xl flex flex-col justify-between rounded-2xl bg-white">
+            <img class="rounded-2xl" src="assects/Images/webdesign.jpg" alt="">
+            <div class="flex justify-center items-center h-28 hover:rounded-2xl hover:bg-purple-300 mt-4  p-4 text-xl">
+               <a href="">Frontend Web Develepment</a>
+            </div>
+          </div>
+
+          <div class="lg:w-80 mt-5  md:h-72  md:mr-4 h-96 shadow-2xl flex flex-col justify-between rounded-2xl bg-white">
+            <img class="rounded-2xl" src="assects/Images/cad.png" alt="">
+            <div class="flex justify-center items-center h-28 hover:rounded-2xl hover:bg-purple-300 mt-4  p-4 text-xl">
+               <a href="">Frontend Web Develepment</a>
+            </div>
+          </div>
+
+          <div class="lg:w-80 mt-5  md:h-72  md:mr-4 h-96 shadow-2xl flex flex-col justify-between  rounded-2xl bg-white">
+            <img class="rounded-2xl" src="assects/Images/eng.jpg" alt="">
+            <div class="flex justify-center items-center h-28 hover:rounded-2xl hover:bg-purple-300 mt-4  p-4 text-xl">
+               <a href="">Frontend Web Develepment</a>
+            </div>
+          </div>
+
+
+
+
+      </div>
+
+      <div class="w-10/12 mt-12 my-12 mx-auto md:flex  lg:flex justify-around mb-8">
+        <div class="lg:w-80 mt-5  md:h-72  md:mr-4 h-96 shadow-2xl flex flex-col justify-between rounded-2xl bg-white">
+          <img class="rounded-2xl" src="assects/Images/graphics.jpg" alt="">
+          <div class="flex justify-center items-center h-28 hover:rounded-2xl hover:bg-purple-300 mt-4  p-4 text-xl">
+             <a href="">Frontend Web Develepment</a>
+          </div>
+        </div>
+
+        <div class="lg:w-80 mt-5  md:h-72  md:mr-4 h-96 shadow-2xl flex flex-col justify-between rounded-2xl bg-white">
+          <img class="rounded-2xl" src="assects/Images/backend.jpg" alt="">
+          <div class="flex justify-center items-center h-28 hover:rounded-2xl hover:bg-purple-300 mt-4  p-4 text-xl">
+             <a href="">Frontend Web Develepment</a>
+          </div>
+        </div>
+
+        <div class="lg:w-80 mt-5  md:h-72  md:mr-4 h-96 shadow-2xl flex flex-col justify-between rounded-2xl bg-white">
+          <img class="rounded-2xl" src="assects/Images/ielts.jpg" alt="">
+          <div class="flex justify-center items-center h-28 hover:rounded-2xl hover:bg-purple-300 mt-4  p-4 text-xl">
+             <a href="">Frontend Web Develepment</a>
+          </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="w-10/12 mt-12 my-12 mx-auto md:flex lg:flex justify-around mb-8">
+      <div class="lg:w-80 mt-5  md:h-72  md:mr-4 h-96 shadow-2xl flex flex-col justify-between rounded-2xl bg-white">
+        <img class="rounded-2xl" src="assects/Images/inventory.webp" alt="">
+        <div class="flex justify-center items-center h-28 hover:rounded-2xl hover:bg-purple-300 mt-4  p-4 text-xl">
+           <a href="">Frontend Web Develepment</a>
+        </div>
+      </div>
+
+      <div class="lg:w-80 mt-5  md:h-72  md:mr-4 h-96 shadow-2xl flex flex-col justify-between rounded-2xl bg-white">
+        <img class="rounded-2xl" src="assects/Images/networking.png" alt="">
+        <div class="flex justify-center items-center h-28 hover:rounded-2xl hover:bg-purple-300 mt-4  p-4 text-xl">
+           <a href="">Frontend Web Develepment</a>
+        </div>
+      </div>
+
+      <div class="lg:w-80 mt-5  md:h-72  md:mr-4 h-96 shadow-2xl flex flex-col justify-between rounded-2xl bg-white">
+        <img class="rounded-2xl" src="assects/Images/office.jpg" alt="">
+        <div class="flex justify-center items-center  h-28 hover:rounded-2xl hover:bg-purple-300  mt-4  p-4 text-xl">
+           <a href="">Frontend Web Develepment</a>
+        </div>
+      </div>
+      <div style="height: 30px;"></div>
+
+
+
+
+  </div>
+    </section>
+    <!-- buy course section -->
+    <section style="background-image: url('assects/Images/globe-mobile2.png'); background-repeat: no-repeat; background-size: cover;" class="mt-20">
+      <div class="lg:h-24 lg:mb-10  flex justify-center"><h2 class=" text-3xl lg:text-7xl text-purple-900">Want to buy course</h2></div>
+      <div class="lg:flex justify-around mx-auto lg:my-20 w-10/12">
+        <div class="lg:w-1/2 lg:p-10">
+          <img src="assects/Images/BKash-bKash-Logo.wine.svg" alt="">
+          <p class="lg:text-2xl text-pink-700">
+            কোর্সে রেজিস্ট্রেশন করার জন্য বিকাশ নম্বর      01762879579 (পার্সোনাল)তে কোর্স ফি পাঠাতে হবে । বিকাশে কোর্স ফি পরিশোধ করার পর বিকাশ হতে প্রাপ্ত এসএমএস থেকে TrxID নম্বর এবং বিকাশ প্রেরকের মোবাইল নম্বর দিয়ে রেজিস্ট্রেশন সম্পন্ন করতে হবে ।
+
+          </p>
+        </div>
+        <div class="lg:w-1/2 p-10">
+          <h2 class="text-center text-2xl lg:text-4xl text-pink-700 font-semibold mb-10">FILL IN THE FROM</h2>
+          <div>
+            <input class=" block bg-transparent placeholder:text-purple-600 lg:text-2xl border-b-4 w-full p-4" type="text" placeholder="Name">
+            
+        
+            <input class="block bg-transparent  placeholder:text-purple-600 lg:text-2xl border-b-4 w-full p-4" type="text" placeholder="Mobile Number">
+            <input class="block bg-transparent  placeholder:text-purple-600 lg:text-2xl border-b-4 w-full p-4" type="text" placeholder="Email">
+            <input class="block bg-transparent  placeholder:text-purple-600 lg:text-2xl border-b-4 w-full p-4" type="text" placeholder="Password">
+            <input class="block bg-transparent  placeholder:text-purple-600 lg:text-2xl border-b-4 w-full p-4" type="text" placeholder="Bikash Number">
+            <input class="block bg-transparent  placeholder:text-purple-600 lg:text-2xl border-b-4 w-full p-4" type="text" placeholder=" Bikash TrxID">
+            <button class="w-40 text-white text-2xl h-16 mt-10 rounded-3xl  bg-pink-600">Submit</button>
+
+          </div>
+        </div>
+      </div>
+      
+
+      <div   class=" flex justify-center mb-16">
+        <div class="w-10/12 lg:flex md:flex justify-around items-center lg:h-56">
+          <div class="h-40 rounded-3xl mb-3 text-3xl flex justify-center items-center  hover:bg-purple-900 hover:text-white lg:w-64 bg-purple-200"><p>1000 রেজি ফি<br> (টাকা)</p></div>
+          <div class="h-40 rounded-3xl mb-3 text-3xl flex justify-center items-center  hover:bg-purple-900 hover:text-white lg:w-64 bg-purple-200"><p>26 মোট শিক্ষার্থী</p></div>
+          <div class="h-40 rounded-3xl mb-3 text-3xl flex justify-center items-center  hover:bg-purple-900 hover:text-white lg:w-64 bg-purple-200"><p class="w-10/12">50 মোট লেকচার</p></div>
+        </div>
+      </div>
+
+      <div class="h-40 flex justify-center items-center">
+        <h3 class="w-1/2 text-center text-white lg:text-2xl">© Copyright South Bangla IT. All Rights Reserved <br>
+          Design & Developed by South Bangla IT</h3>
+      </div>
+
+    </section>
+
+
+    <!-- this is a cource info -->
+<!-- 
+    <div style="background-image: url('assects/Images/globe-mobile2.png'); background-repeat: no-repeat; background-size: cover;"  class=" bg-purple-950 flex justify-center">
+      <div class="w-10/12 flex justify-around items-center h-56">
+        <div>1000 রেজি ফি (টাকা)</div>
+        <div>00 মোট শিক্ষার্থী</div>
+        <div class="h-40 rounded-3xl text-3xl flex justify-center items-center  w-64 bg-purple-300"><p class="w-10/12">50 মোট লেকচার</p></div>
+      </div>
+    </div> -->
+      
+    
+    
+    
+<!-- slider cdn from swiper  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+<!-- custom js file -->
+<script src="modiul2.js"></script>
+
+</body>
+</html>
